@@ -1,5 +1,3 @@
-import { Denzo } from "../denzo.ts";
-
 export interface Inject {
   (
     input: Request | URL | string,

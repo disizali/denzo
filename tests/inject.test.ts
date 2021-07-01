@@ -3,7 +3,7 @@ import { createInject } from "../utils/inject.ts";
 
 const { test } = Deno;
 
-test("[denzo] should send mock request to a simple server", async () => {
+test("[inject] should send mock request to a simple server", async () => {
   const server = (
     { request, respondWith }: Deno.RequestEvent,
   ): Promise<void> => {
@@ -20,7 +20,7 @@ test("[denzo] should send mock request to a simple server", async () => {
   assertEquals(body, "hi there!");
 });
 
-test("[denzo] should send mock request with body to a simple server", async () => {
+test("[inject] should send mock request with body to a simple server", async () => {
   const server = async (
     { request, respondWith }: Deno.RequestEvent,
   ): Promise<void> => {
